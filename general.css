@@ -58,14 +58,21 @@ body {
 
   .explore-more {
     text-align: center;
-    .explore-more {
-      font-size: 16px;
-      text-align: center;
-    }
+
+    font-size: 16px;
+    text-align: center;
   }
 }
 
 @media (max-width: 600px) {
+  .explore-more {
+    width: 300px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .hit {
+    font-size: 14px;
+  }
   .profile-pic1,
   .profile-pic-about {
     width: 310px;
