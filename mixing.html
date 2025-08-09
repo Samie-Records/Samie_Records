@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixing & Mastering Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header class="sidebar">
+      <div onclick="hideSidebar()" class="mbi">
+        <a class="close" href="#"><i class="bx bx-x"></i></a>
+      </div>
+
+      <nav class="navbar-side">
+        <a href="index.html" class="active-bar">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+    </header>
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img class="L-icon" src="logo.png" alt="" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+
+      <!-- Search Icon -->
+      <div class="search-icon-container">
+        <img
+          src="search-regular-24.png"
+          alt="Search"
+          class="search-icon"
+          onclick="openSearch()" />
+      </div>
+
+      <!-- Fullscreen Search Overlay -->
+      <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+          <form id="searchForm">
+            <input
+              type="search"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search..."
+              required />
+          </form>
+          <button class="close-btn" onclick="closeSearch()">&times;</button>
+        </div>
+      </div>
+
+      <div class="shop-wrap">
+        <a href="payment.html"
+          ><img class="shop-icon" src="shop.png" alt=""
+        /></a>
+        <a href="form.html"
+          ><img class="contact-icon" src="contact mail.png" alt=""
+        /></a>
+      </div>
+
+      <div class="menu-button" onclick="showSidebar()">
+        <a class="menu" href="#"><i class="bx bx-menu"></i></a>
+      </div>
+    </header>
+
+    <section class="all-M">
+      <div class="Mixing-price-container">
+        <h1 class="mixing">Pricing</h1>
+      </div>
+
+      <div class="grid-wrapper">
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">
+            Professional Mixing And Mastering Of Up To 20 Stems. Delivered In
+            High-quality WAV And MP3 Formats.
+          </p>
+          <p class="lowest-price">&#36;50</p>
+          <p class="delivery">4-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;20 Tracks</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">For A Complete Single Song Beat Production.</p>
+          <p class="lowest-price">&#36;100</p>
+          <p class="delivery">4-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Complete Stems</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">For A Complete Single Track Vocal Recording Only.</p>
+          <p class="lowest-price">&#36;45</p>
+          <p class="delivery">1-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&#10060; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&#10060; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&#10060; &nbsp;&nbsp;&nbsp;20 Tracks</p>
+          <p class="mx">&#10003; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">For A Complete Single Track.</p>
+          <p class="lowest-price">&#36;150</p>
+          <p class="delivery">4-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;50 Tracks</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ending-mix-sec">
+      <div class="SocialM">
+        <div class="Follow">Follow Me</div>
+        <a class="c" href="https://www.tiktok.com/@samierecords" target="_blank"
+          ><div><i class="bx bxl-tiktok"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.instagram.com/samierecords/"
+          target="_blank"
+          ><div><i class="bx bxl-instagram-alt"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://web.facebook.com/profile.php?id=100082840788952"
+          target="_blank"
+          ><div><i class="bx bxl-facebook-circle"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.youtube.com/@samierecords/shorts"
+          target="_blank"
+          ><div><i class="bx bxl-youtube"></i></div
+        ></a>
+      </div>
+      <div class="copyrights">
+        Copyright <i class="bx bx-copyright"></i> 2025 Samie Records | All
+        Rights Reserved.
+      </div>
+    </section>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <script>
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+    </script>
+
+    <script>
+      // Open and close functions
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+        document.getElementById("searchInput").focus();
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+
+      // Handle search submission
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // prevent page refresh
+          const query = document.getElementById("searchInput").value.trim();
+          if (query) {
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+          }
+        });
+
+      // Open and close functions
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+        document.getElementById("searchInput").focus();
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+
+      // Handle search submission
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // prevent page refresh
+          const query = document.getElementById("searchInput").value.trim();
+          if (query) {
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+          }
+        });
+    </script>
+  </body>
+</html>

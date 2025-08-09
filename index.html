@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samie Records</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header class="sidebar">
+      <div onclick="hideSidebar()" class="mbi">
+        <a class="close" href="#"><i class="bx bx-x"></i></a>
+      </div>
+
+      <nav class="navbar-side">
+        <a href="index.html" class="active-bar">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+    </header>
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img class="L-icon" src="logo.png" alt="" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+
+      <!-- Search Icon -->
+      <div class="search-icon-container">
+        <img
+          src="search-regular-24.png"
+          alt="Search"
+          class="search-icon"
+          onclick="openSearch()" />
+      </div>
+
+      <!-- Fullscreen Search Overlay -->
+      <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+          <form id="searchForm">
+            <input
+              type="search"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search..."
+              required />
+          </form>
+          <button class="close-btn" onclick="closeSearch()">&times;</button>
+        </div>
+      </div>
+
+      <div class="shop-wrap">
+        <a href="payment.html"
+          ><img class="shop-icon" src="shop.png" alt=""
+        /></a>
+        <a href="form.html"
+          ><img class="contact-icon" src="contact mail.png" alt=""
+        /></a>
+      </div>
+
+      <div class="menu-button" onclick="showSidebar()">
+        <a class="menu" href="#"><i class="bx bx-menu"></i></a>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi, I'm Samie</h1>
+        <h3>Music Producer</h3>
+        <p>
+          I'm a music producer with 5+ years of experience using FL Studio,
+          creating Afrobeat, gospel, and modern sounds. I helps artists bring
+          their ideas to life with clean mixes and unique beats.
+        </p>
+        <p></p>
+        <div class="btn-box">
+          <a href="form.html" target="_blank">Hire Me</a>
+          <a href="https://www.tiktok.com/@samierecords" target="_blank"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
+
+      <div class="home-sci">
+        <a href="https://www.tiktok.com/@samierecords" target="_blank"
+          ><i class="bx bxl-tiktok"></i
+        ></a>
+        <a href="https://www.instagram.com/samierecords/" target="_blank"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+        <a
+          href="https://web.facebook.com/profile.php?id=100082840788952"
+          target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+      </div>
+
+      <span class="home-imgHover"></span>
+    </section>
+
+    <section class="page2">
+      <div class="wraper1">
+        <div>
+          <img class="profile-pic1" src="dp 3.jpg" alt="" />
+        </div>
+        <div class="intro">
+          <h1>What drives me:</h1>
+          <p>
+            I'm driven by a passion to craft premium Afrobeat and Gospelbeat
+            sounds that bring your musical vision to life. With every beat I
+            produce and every mix I refine, I aim to elevate creativity and
+            streamline your workflow—helping artists and creators unlock their
+            full potential. At the heart of it all is a commitment to preserve
+            and push the culture forward, keeping the spirit of Afrobeat and
+            Gospelbeat alive through high-quality production and professional
+            sound.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- explore more -->
+    <div class="explore-container">
+      <h1 class="explore-more">Explore More</h1>
+    </div>
+
+    <div class="image-gallery">
+      <img src="1.png" alt="Image 1" />
+      <img src="pic 1.jpg" alt="Image 2" />
+      <img src="2.png" alt="Image 3" />
+      <img src="8.png" alt="Image 4" />
+    </div>
+
+    <!-- carousel -->
+
+    <!-- <div class="carousel-container">
+      <button class="carousel-btn prev">&#10094;</button>
+
+      <div class="carousel-track-container">
+        <ul class="carousel-track"> -->
+    <!-- Product Card 1 -->
+    <!-- <li class="carousel-slide">
+            <img src="Afro loop kits.png" alt="Product 1" />
+            <div class="product-details">
+              <h3>Afrobeat Loop Kit</h3>
+              <p>$15</p>
+              <a href="payment.html?product=1" class="buy-btn">Buy Now</a>
+            </div>
+          </li> -->
+    <!-- Duplicate the above card 5 more times for other products -->
+    <!-- <li class="carousel-slide">
+            <img src="afo guitar.png" alt="Product 2" />
+            <div class="product-details">
+              <h3>Gospel Drum Pack</h3>
+              <p>$20</p>
+              <a href="payment.html?product=2" class="buy-btn">Buy Now</a>
+            </div>
+          </li>
+          <li class="carousel-slide">
+            <img src="Afro Essentials.png" alt="Product 3" />
+            <div class="product-details">
+              <h3>Piano MIDI Pack</h3>
+              <p>$12</p>
+              <a href="payment.html?product=3" class="buy-btn">Buy Now</a>
+            </div>
+          </li>
+          <li class="carousel-slide">
+            <img src="Afro Gasm.png" alt="Product 4" />
+            <div class="product-details">
+              <h3>Bassline Kit</h3>
+              <p>$10</p>
+              <a href="payment.html?product=4" class="buy-btn">Buy Now</a>
+            </div>
+          </li>
+          <li class="carousel-slide">
+            <img src="Afro sample.png" alt="Product 5" />
+            <div class="product-details">
+              <h3>Vocal FX Pack</h3>
+              <p>$8</p>
+              <a href="payment.html?product=5" class="buy-btn">Buy Now</a>
+            </div>
+          </li>
+          <li class="carousel-slide">
+            <img src="Gospel pack.png" alt="Product 6" />
+            <div class="product-details">
+              <h3>Producer Starter Kit</h3>
+              <p>$25</p>
+              <a href="payment.html?product=6" class="buy-btn">Buy Now</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+
+    <script src="app.js"></script> -->
+
+    <!-- drum samples -->
+    <section class="product-gallery">
+      <h2 class="gallery-title">Most Popular Sound Packs</h2>
+      <h3 class="hit">Create Your Next Hit With High-quality Sounds</h3>
+
+      <div class="gallery-grid">
+        <div class="product-card">
+          <img src="Afro guitar melody.png" alt="Afrobeat Sample Pack" />
+          <h3>Afro Guitar Melodies</h3>
+          <button
+            onclick="payWithPaystack('Afrobeat Sample Vol. 1', 25000, 'thank-you-download.html?file=afrobeat1')">
+            Buy Now
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="afro beats.png" Gospel Drum Kit />
+          <h3>Full Beat Production</h3>
+          <button
+            onclick="payWithPaystack('Gospel Drum Kit', 100000, 'thank-you-download.html?file=gospelkit')">
+            Buy Now
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="Afro Synergy.png" alt="Afro Fusion Pack" />
+          <h3>Afro Synergy</h3>
+          <button
+            onclick="payWithPaystack('Afro Fusion Pack', 29000, 'thank-you-download.html?file=afrofusion')">
+            Buy Now
+          </button>
+        </div>
+        <div class="product-card">
+          <img src="perc.png" alt="Highlife Samples" />
+          <h3>Percussion</h3>
+          <button
+            onclick="payWithPaystack('Highlife Essentials', 39000, 'thank-you-download.html?file=highlife')">
+            Buy Now
+          </button>
+        </div>
+      </div>
+      <!-- <a href="music_sample_store/drum-samples.html" target="_blank"
+        ><p class="click-here">More Packs &#8594;</p></a -->
+      <!-- > -->
+    </section>
+    <!-- explore more -->
+    <!-- explore more -->
+    <div class="explore-container2">
+      <h1 class="explore-more">Skills</h1>
+    </div>
+
+    <div class="gallery-wrap">
+      <div class="gallery">
+        <a href="#">
+          <img src="7.png" alt="Image 1" />
+        </a>
+        <a href="#">
+          <img src="5.png" alt="Image 2" />
+        </a>
+        <a href="#">
+          <img src="6.png" alt="Image 3" />
+        </a>
+        <a href="#">
+          <img src="3.png" alt="Image 4" />
+        </a>
+        <a href="#">
+          <img src="4.png" alt="Image 4" />
+        </a>
+        <a href="#">
+          <img src="9.png" alt="Image 4" />
+        </a>
+      </div>
+    </div>
+
+    <!-- ending -->
+    <section class="ending">
+      <div class="SocialM">
+        <div class="Follow">Follow Me</div>
+        <a class="c" href="https://www.tiktok.com/@samierecords" target="_blank"
+          ><div><i class="bx bxl-tiktok"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.instagram.com/samierecords/"
+          target="_blank"
+          ><div><i class="bx bxl-instagram-alt"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://web.facebook.com/profile.php?id=100082840788952"
+          target="_blank"
+          ><div><i class="bx bxl-facebook-circle"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.youtube.com/@samierecords/shorts"
+          target="_blank"
+          ><div><i class="bx bxl-youtube"></i></div
+        ></a>
+      </div>
+      <div class="copyrights">
+        Copyright <i class="bx bx-copyright"></i> 2025 Samie Records | All
+        Rights Reserved.
+      </div>
+    </section>
+    <!-- drum samples script -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+      function payWithPaystack(productName, amount, downloadPageLink) {
+        let handler = PaystackPop.setup({
+          key: "pk_test_95b305c95ab3c46df22548b3a04b259c2f4c6f7c", // Replace with your Paystack public key
+          email: "customer@email.com",
+          amount: amount * 100,
+          currency: "NGN",
+          label: productName,
+          callback: function (response) {
+            window.location.href = downloadPageLink;
+          },
+          onClose: function () {
+            alert("Transaction cancelled.");
+          },
+        });
+        handler.openIframe();
+      }
+    </script>
+    <!-- drum samples ends -->
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <script>
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+    </script>
+
+    <script>
+      // Open and close functions
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+        document.getElementById("searchInput").focus();
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+
+      // Handle search submission
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // prevent page refresh
+          const query = document.getElementById("searchInput").value.trim();
+          if (query) {
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+          }
+        });
+
+      // Open and close functions
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+        document.getElementById("searchInput").focus();
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+
+      // Handle search submission
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // prevent page refresh
+          const query = document.getElementById("searchInput").value.trim();
+          if (query) {
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+          }
+        });
+    </script>
+  </body>
+</html>

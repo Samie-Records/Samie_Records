@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="sidebar">
+      <div onclick="hideSidebar()" class="mbi">
+        <a class="close" href="#"><i class="bx bx-x"></i></a>
+      </div>
+
+      <nav class="navbar-side">
+        <a href="index.html" class="active-bar">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+    </header>
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img class="L-icon" src="logo.png" alt="" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="thank-you">
+      <div class="size">
+        <div class="box">
+          <h1>🎉 Payment Successful!</h1>
+          <p>Thank you for your payment.</p>
+          <p><strong>Reference:</strong> <span id="refText"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ending -->
+    <section class="ending">
+      <div class="SocialM">
+        <div class="Follow">Follow Me</div>
+        <a class="c" href="https://www.tiktok.com/@samierecords" target="_blank"
+          ><div><i class="bx bxl-tiktok"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.instagram.com/samierecords/"
+          target="_blank"
+          ><div><i class="bx bxl-instagram-alt"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://web.facebook.com/profile.php?id=100082840788952"
+          target="_blank"
+          ><div><i class="bx bxl-facebook-circle"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.youtube.com/@samierecords/shorts"
+          target="_blank"
+          ><div><i class="bx bxl-youtube"></i></div
+        ></a>
+      </div>
+      <div class="copyrights">
+        Copyright <i class="bx bx-copyright"></i> 2025 Samie Records | All
+        Rights Reserved.
+      </div>
+    </section>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const ref = urlParams.get("ref");
+      document.getElementById("refText").textContent = ref;
+    </script>
+  </body>
+</html>

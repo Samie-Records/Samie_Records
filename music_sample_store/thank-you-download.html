@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Your Product</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    .download-box {
+      background: #1f1f1f;
+      padding: 40px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+
+    a.download-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #FFD700;
+      color: #000;
+      padding: 12px 24px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="download-box">
+    <h1>Thank you for your purchase!</h1>
+    <p>Your download is ready.</p>
+    <a class="download-button" id="downloadLink" href="#">Download Now</a>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const file = urlParams.get('file');
+
+    const fileMap = {
+      'afrobeat1': 'https://yourdomain.com/downloads/afrobeat-sample-pack-1.zip',
+      'gospelkit': 'https://yourdomain.com/downloads/gospel-drum-kit.zip',
+      'afrofusion': 'https://yourdomain.com/downloads/afro-fusion-pack.zip',
+      'highlife': 'https://yourdomain.com/downloads/highlife-essentials.zip'
+    };
+
+    if (fileMap[file]) {
+      document.getElementById('downloadLink').href = fileMap[file];
+    } else {
+      document.querySelector('.download-box').innerHTML = "<h2>Invalid or expired download link.</h2>";
+    }
+  </script>
+</body>
+</html>

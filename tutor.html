@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutor Reg.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <header class="sidebar">
+      <div onclick="hideSidebar()" class="mbi">
+        <a class="close" href="#"><i class="bx bx-x"></i></a>
+      </div>
+
+      <nav class="navbar-side">
+        <a href="index.html" class="active-bar">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+    </header>
+
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img class="L-icon" src="logo.png" alt="" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="tutor.html">Tutor Reg.</a>
+        <a href="mixing.html">Mixing & Mastering</a>
+        <a href="payment.html">Payment</a>
+        <a href="form.html">Contact</a>
+      </nav>
+
+      <!-- Search Icon -->
+      <div class="search-icon-container">
+        <img
+          src="search-regular-24.png"
+          alt="Search"
+          class="search-icon"
+          onclick="openSearch()" />
+      </div>
+
+      <!-- Fullscreen Search Overlay -->
+      <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+          <form id="searchForm">
+            <input
+              type="search"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search..."
+              required />
+          </form>
+          <button class="close-btn" onclick="closeSearch()">&times;</button>
+        </div>
+      </div>
+
+      <div class="shop-wrap">
+        <a href="payment.html"
+          ><img class="shop-icon" src="shop.png" alt=""
+        /></a>
+        <a href="form.html"
+          ><img class="contact-icon" src="contact mail.png" alt=""
+        /></a>
+      </div>
+
+      <div class="menu-button" onclick="showSidebar()">
+        <a class="menu" href="#"><i class="bx bx-menu"></i></a>
+      </div>
+    </header>
+
+    <!-- Contact Us -->
+
+    <section class="page2-tutor-reg">
+      <div class="cf-wrapper">
+        <div class="cf-box">
+          <h2 class="cf-title">Registration</h2>
+          <h3 class="cf-title-sub">For Production & Mixing/Mastering</h3>
+
+          <form
+            class="cf-form"
+            action="https://formsubmit.co/musicproductionshare@gmail.com"
+            method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your Phone Number"
+              required />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required></textarea>
+
+            <!-- optional hidden fields -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Message from Contact Form" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourwebsite.com/thank-you.html" />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Basic Plan -->
+
+    <section class="pricing-section">
+      <h1 class="title">Choose Your Plan</h1>
+      <h3 class="title-sub">One-On-One Online Training. 100% Practical!</h3>
+      <h3 class="title-sub2">For Production & Mixing/Matering.</h3>
+      <div class="pricing-cards">
+        <!-- Basic Plan -->
+        <div class="card">
+          <h2>Pro</h2>
+          <p class="price">$199<span>/ 1month</span></p>
+          <ul>
+            <li>✔ Production</li>
+            <li>✔ Mixing</li>
+            <li>✔ Mastering</li>
+          </ul>
+          <a href="payment.html" target="_blank" class="btn">Choose Pro</a>
+        </div>
+
+        <!-- Pro Plan (Highlighted) -->
+        <div class="card recommended">
+          <h2>Enterprise</h2>
+          <p class="price">$399<span>/ 2months</span></p>
+          <ul>
+            <li>✔ Production</li>
+            <li>✔ Mixing</li>
+            <li>✔ Mastering</li>
+          </ul>
+          <a href="payment.html" target="_blank" class="btn"
+            >Choose Enterprise</a
+          >
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card">
+          <h2>Premium</h2>
+          <p class="price">$599<span>/ 3months</span></p>
+          <ul>
+            <li>✔ Production</li>
+            <li>✔ Mixing</li>
+            <li>✔ Mastering</li>
+          </ul>
+          <a href="payment.html" target="_blank" class="btn">Choose Premium</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ending -->
+    <section class="ending">
+      <div class="SocialM">
+        <div class="Follow">Follow Me</div>
+        <a class="c" href="https://www.tiktok.com/@samierecords" target="_blank"
+          ><div><i class="bx bxl-tiktok"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.instagram.com/samierecords/"
+          target="_blank"
+          ><div><i class="bx bxl-instagram-alt"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://web.facebook.com/profile.php?id=100082840788952"
+          target="_blank"
+          ><div><i class="bx bxl-facebook-circle"></i></div
+        ></a>
+        <a
+          class="c"
+          href="https://www.youtube.com/@samierecords/shorts"
+          target="_blank"
+          ><div><i class="bx bxl-youtube"></i></div
+        ></a>
+      </div>
+      <div class="copyrights">
+        Copyright <i class="bx bx-copyright"></i> 2025 Samie Records | All
+        Rights Reserved.
+      </div>
+    </section>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <script>
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+    </script>
+
+    <script>
+      // Open and close functions
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+        document.getElementById("searchInput").focus();
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+
+      // Handle search submission
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // prevent page refresh
+          const query = document.getElementById("searchInput").value.trim();
+          if (query) {
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+          }
+        });
+
+      // Open and close functions
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "flex";
+        document.getElementById("searchInput").focus();
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+
+      // Handle search submission
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // prevent page refresh
+          const query = document.getElementById("searchInput").value.trim();
+          if (query) {
+            window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+          }
+        });
+    </script>
+  </body>
+</html>
