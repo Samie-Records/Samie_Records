@@ -1371,7 +1371,7 @@ form .text h3 a:hover {
 }
 
 .gallery-title {
-  font-size: 2rem;
+  font-size: 2.6rem;
   margin-bottom: 2rem;
   color: #ffd700;
   margin-top: 8rem;
@@ -1381,7 +1381,7 @@ form .text h3 a:hover {
 .hit {
   margin-top: 0;
   margin-bottom: 3rem;
-  color: rgb(254, 49, 49);
+  color: #4070f4;
 }
 .gallery-grid {
   display: flex;
