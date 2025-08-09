@@ -161,7 +161,7 @@
 /* about */
 
 .page-about {
-  height: 100vh;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,12 +204,13 @@
 /* SECOND PAGE - PROFILE */
 
 .page2 {
-  height: 100vh;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   flex-wrap: wrap;
+  background-color: yellow;
 }
 .wraper1 {
   display: grid;
@@ -1296,6 +1297,7 @@ form .text h3 a:hover {
   padding: 30px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  border: 2px solid #007bff;
 }
 .card:hover {
   transform: translateY(-5px);
