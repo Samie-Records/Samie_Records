@@ -89,11 +89,12 @@
         <h1>Hi, I'm Samie</h1>
         <h3>Music Producer</h3>
         <p>
-          I'm a music producer with 5+ years of experience using FL Studio,
-          creating Afrobeat, gospel, and modern sounds. I helps artists bring
-          their ideas to life with clean mixes and unique beats.
+          I’m a music producer with over five years of experience using FL
+          Studio, specializing in Afrobeat, gospel, and contemporary sounds. I
+          work with artists to transform their ideas into polished tracks,
+          delivering clean mixes and distinctive beats.
         </p>
-        <p></p>
+
         <div class="btn-box">
           <a href="form.html" target="_blank">Hire Me</a>
           <a href="https://www.tiktok.com/@samierecords" target="_blank"
@@ -152,6 +153,52 @@
       <img src="8.png" alt="Image 4" />
     </div>
 
+    <!-- Basic Plan -->
+
+    <section class="pricing-section">
+      <h1 class="title">Choose Your Plan</h1>
+      <h3 class="title-sub">One-On-One Online Training. 100% Practical!</h3>
+      <h3 class="title-sub2">For Production & Mixing/Matering.</h3>
+      <div class="pricing-cards">
+        <!-- Basic Plan -->
+        <div class="card">
+          <h2>Pro</h2>
+          <p class="price">$99<span>/ 1month</span></p>
+          <ul>
+            <li>✔ Production</li>
+            <li>✔ Mixing</li>
+            <li>✔ Mastering</li>
+          </ul>
+          <a href="payment.html" target="_blank" class="btn">Choose Pro</a>
+        </div>
+
+        <!-- Pro Plan (Highlighted) -->
+        <div class="card recommended">
+          <h2>Enterprise</h2>
+          <p class="price">$199<span>/ 2months</span></p>
+          <ul>
+            <li>✔ Production</li>
+            <li>✔ Mixing</li>
+            <li>✔ Mastering</li>
+          </ul>
+          <a href="payment.html" target="_blank" class="btn"
+            >Choose Enterprise</a
+          >
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card">
+          <h2>Premium</h2>
+          <p class="price">$299<span>/ 3months</span></p>
+          <ul>
+            <li>✔ Production</li>
+            <li>✔ Mixing</li>
+            <li>✔ Mastering</li>
+          </ul>
+          <a href="payment.html" target="_blank" class="btn">Choose Premium</a>
+        </div>
+      </div>
+    </section>
     <!-- carousel -->
 
     <!-- <div class="carousel-container">
@@ -217,49 +264,135 @@
 
     <script src="app.js"></script> -->
 
-    <!-- drum samples -->
-    <section class="product-gallery">
-      <h2 class="gallery-title">Sound Packs</h2>
-      <h3 class="hit">Create Your Next Hit With Quality Sounds</h3>
+    <!-- Top Pick -->
 
-      <div class="gallery-grid">
-        <div class="product-card">
-          <img src="Afro guitar melody.png" alt="Afrobeat Sample Pack" />
-          <h3>Afro Guitar Melodies</h3>
-          <button
-            onclick="payWithPaystack('Afrobeat Sample Vol. 1', 25000, 'thank-you-download.html?file=afrobeat1')">
+    <div class="top-picks">Top Picks</div>
+
+    <div class="box-container">
+      <div class="box-wrapper">
+        <div class="image-gallery1">
+          <img class="image-resize" src="images/Afro Essentials.png" alt="" />
+          <p class="buy-now" onclick="payWithPaystackAfroEssentials()">
             Buy Now
-          </button>
+          </p>
         </div>
-        <div class="product-card">
-          <img src="afro beats.png" Gospel Drum Kit />
-          <h3>Full Beat Production</h3>
-          <button
-            onclick="payWithPaystack('Gospel Drum Kit', 100000, 'thank-you-download.html?file=gospelkit')">
-            Buy Now
-          </button>
-        </div>
-        <div class="product-card">
-          <img src="Afro Synergy.png" alt="Afro Fusion Pack" />
-          <h3>Afro Synergy</h3>
-          <button
-            onclick="payWithPaystack('Afro Fusion Pack', 29000, 'thank-you-download.html?file=afrofusion')">
-            Buy Now
-          </button>
-        </div>
-        <div class="product-card">
-          <img src="perc.png" alt="Highlife Samples" />
-          <h3>Percussion</h3>
-          <button
-            onclick="payWithPaystack('Highlife Essentials', 39000, 'thank-you-download.html?file=highlife')">
-            Buy Now
-          </button>
+        <p class="Afro-Synergy">Afro Essentials</p>
+        <div class="amount">
+          <p class="before">&#36;100.00 USD</p>
+          <p class="after">&#36;40.00 USD</p>
         </div>
       </div>
-      <!-- <a href="music_sample_store/drum-samples.html" target="_blank"
-        ><p class="click-here">More Packs &#8594;</p></a -->
-      <!-- > -->
+
+      <div class="box-wrapper">
+        <div class="image-gallery1">
+          <img class="image-resize" src="images/afro full beat.jpg" alt="" />
+          <a href="#"><p class="view-packs">View Packs</p></a>
+        </div>
+        <p class="Afro-Synergy">Full Afro Beat Production</p>
+        <p class="click-packs">Click The <b>View Packs</b> To Explore</p>
+      </div>
+
+      <div class="box-wrapper">
+        <div class="image-gallery1">
+          <img class="image-resize" src="images/Afro samples.jpg" alt="" />
+          <p class="buy-now" onclick="payWithPaystackAfroSample()">Buy Now</p>
+        </div>
+        <p class="Afro-Synergy">Afro Beat Sample</p>
+        <div class="amount">
+          <p class="before">&#36;100.00 USD</p>
+          <p class="after">&#36;25.00 USD</p>
+        </div>
+      </div>
+      <div class="box-wrapper">
+        <div class="image-gallery1">
+          <img class="image-resize" src="images/Afro loop kits.jpg" alt="" />
+          <p class="buy-now" onclick="payWithPaystackAfroLoops()">Buy Now</p>
+        </div>
+        <p class="Afro-Synergy">Afro Beat Loops</p>
+        <div class="amount">
+          <p class="before">&#36;100.00 USD</p>
+          <p class="after">&#36;35.00 USD</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- mining/mastering price -->
+
+    <section class="all-M">
+      <div class="Mixing-price-container">
+        <h1 class="mixing">Pricing</h1>
+      </div>
+
+      <div class="grid-wrapper">
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">
+            Professional Mixing And Mastering Of Up To 20 Stems. Delivered In
+            High-quality WAV And MP3 Formats.
+          </p>
+          <p class="lowest-price">&#36;50</p>
+          <p class="delivery">4-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;20 Tracks</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">For A Complete Single Song Beat Production.</p>
+          <p class="lowest-price">&#36;100</p>
+          <p class="delivery">4-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Complete Stems</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">For A Complete Single Track Vocal Recording Only.</p>
+          <p class="lowest-price">&#36;45</p>
+          <p class="delivery">1-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&#10060; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&#10060; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&#10060; &nbsp;&nbsp;&nbsp;20 Tracks</p>
+          <p class="mx">&#10003; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+
+        <div class="sec1-wrapper">
+          <h1 class="price-head">Premium</h1>
+          <p class="MS">For A Complete Single Track.</p>
+          <p class="lowest-price">&#36;150</p>
+          <p class="delivery">4-Day Delivery.</p>
+          <p class="unlimited">Unlimited Revisions.</p>
+          <a href="payment.html"
+            ><button class="Choose-plan">Choose Plan</button></a
+          >
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mixing</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;Mastering</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;50 Tracks</p>
+          <p class="mx">&nbsp;&#10003; &nbsp;&nbsp;&nbsp;1 Song</p>
+        </div>
+      </div>
     </section>
+
+    <!-- <a href="music_sample_store/drum-samples.html" target="_blank"
+        ><p class="click-here">More Packs &#8594;</p></a -->
+    <!-- > -->
+
     <!-- explore more -->
     <!-- explore more -->
     <div class="explore-container2">
@@ -320,6 +453,82 @@
         Rights Reserved.
       </div>
     </section>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script>
+      // Afro Essentials
+      function payWithPaystackAfroEssentials() {
+        var handler = PaystackPop.setup({
+          key: "pk_test_95b305c95ab3c46df22548b3a04b259c2f4c6f7c",
+          email: "customer@example.com",
+          amount: 3200000, // NGN 62,000 (multiply by 100 for kobo)
+          currency: "NGN",
+          ref: "" + Math.floor(Math.random() * 1000000000 + 1),
+          callback: function (response) {
+            window.location.href = "thank-afro-essentials.html";
+          },
+          onClose: function () {
+            alert("Payment cancelled.");
+          },
+        });
+        handler.openIframe();
+      }
+
+      // Full Afro Beats
+      function payWithPaystackFullAfroBeats() {
+        var handler = PaystackPop.setup({
+          key: "pk_test_95b305c95ab3c46df22548b3a04b259c2f4c6f7c",
+          email: "customer@example.com",
+          amount: 7800000, // NGN 100,000
+          currency: "NGN",
+          ref: "" + Math.floor(Math.random() * 1000000000 + 1),
+          callback: function (response) {
+            window.location.href = "thank-full-afro-beats.html";
+          },
+          onClose: function () {
+            alert("Payment cancelled.");
+          },
+        });
+        handler.openIframe();
+      }
+
+      // Afro Beat Sample
+      function payWithPaystackAfroSample() {
+        var handler = PaystackPop.setup({
+          key: "pk_test_95b305c95ab3c46df22548b3a04b259c2f4c6f7c",
+          email: "customer@example.com",
+          amount: 2000000, // NGN 54,000
+          currency: "NGN",
+          ref: "" + Math.floor(Math.random() * 1000000000 + 1),
+          callback: function (response) {
+            window.location.href = "thank-afro-sample.html";
+          },
+          onClose: function () {
+            alert("Payment cancelled.");
+          },
+        });
+        handler.openIframe();
+      }
+
+      // Afro Beat Loops
+      function payWithPaystackAfroLoops() {
+        var handler = PaystackPop.setup({
+          key: "pk_test_95b305c95ab3c46df22548b3a04b259c2f4c6f7c",
+          email: "customer@example.com",
+          amount: 2800000, // NGN 3,500
+          currency: "NGN",
+          ref: "" + Math.floor(Math.random() * 1000000000 + 1),
+          callback: function (response) {
+            window.location.href = "thank-afro-loops.html";
+          },
+          onClose: function () {
+            alert("Payment cancelled.");
+          },
+        });
+        handler.openIframe();
+      }
+    </script>
+
     <!-- drum samples script -->
     <script src="https://js.paystack.co/v1/inline.js"></script>
     <script>
