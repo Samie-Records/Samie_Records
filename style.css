@@ -183,7 +183,7 @@
 }
 
 .profile-pic-about:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 .intro {
   justify-content: center;
@@ -225,7 +225,7 @@
 }
 
 .profile-pic1:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .intro h1 {
@@ -1558,4 +1558,128 @@ a {
   .buy-btn {
     padding: 8px 16px;
   }
+}
+
+/* Brought forward*/
+
+.top-picks {
+  font-size: 40px;
+  justify-content: center;
+  display: flex;
+  font-weight: 600;
+  color: black;
+}
+
+.box-container {
+  background-color: #fff;
+  gap: 10px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+.box-wrapper {
+  height: 350px;
+  width: 285px;
+  background-color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.image-gallery1 {
+  height: 270px;
+  width: 270px;
+  margin-top: -3rem;
+  position: relative;
+}
+
+.buy-now {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  width: 6rem;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 14rem;
+  left: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.view-packs {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  width: 7rem;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 14rem;
+  left: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.image-resize {
+  width: 100%;
+  transition: 0.35s;
+  cursor: pointer;
+}
+.image-resize:hover {
+  transform: scale(103%);
+}
+
+.Afro-Synergy {
+  font-size: 12px;
+  margin-left: 1rem;
+  margin-top: 17rem;
+  cursor: pointer;
+  width: 200px;
+  color: black;
+  position: absolute;
+}
+
+.Afro-Synergy:hover {
+  text-decoration: underline;
+}
+
+.click-packs {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 1rem;
+  margin-top: 20rem;
+  cursor: pointer;
+  width: 230px;
+  color: black;
+  position: absolute;
+}
+.amount {
+  display: flex;
+  margin-top: 20rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  max-width: 250px;
+  margin-left: 1rem;
+  color: black;
+  position: absolute;
+}
+
+.before {
+  font-size: 12px;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.after {
+  font-size: 17px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.background-color {
+  background-color: yellow;
 }
