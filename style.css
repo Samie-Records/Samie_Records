@@ -1586,7 +1586,7 @@ a {
   background-color: #fff;
   display: grid;
   justify-content: center;
-  align-items: center;
+  margin-top: 1rem;
 }
 .image-gallery1 {
   height: 270px;
@@ -1603,11 +1603,11 @@ a {
   width: 6rem;
   padding-top: 5px;
   padding-bottom: 10px;
-  position: absolute;
-  top: 14rem;
+  top: 17.5rem;
   left: 1rem;
   border-radius: 20px;
   cursor: pointer;
+  position: absolute;
 }
 .view-packs {
   background-color: black;
@@ -1617,29 +1617,30 @@ a {
   width: 7rem;
   padding-top: 5px;
   padding-bottom: 10px;
-  position: absolute;
-  top: 14rem;
+  top: 17.5rem;
   left: 1rem;
   border-radius: 20px;
   cursor: pointer;
+  position: absolute;
 }
 .image-resize {
+  margin-top: 3.5rem;
   width: 100%;
   transition: 0.35s;
   cursor: pointer;
 }
 .image-resize:hover {
-  transform: scale(103%);
+  transform: scale(105%);
 }
 
 .Afro-Synergy {
   font-size: 12px;
-  margin-left: 1rem;
-  margin-top: 17rem;
+  margin-left: 5px;
+  margin-top: 4rem;
+  margin-bottom: 0;
   cursor: pointer;
   width: 200px;
   color: black;
-  position: absolute;
 }
 
 .Afro-Synergy:hover {
@@ -1649,23 +1650,22 @@ a {
 .click-packs {
   font-size: 16px;
   font-weight: 400;
-  margin-left: 1rem;
-  margin-top: 20rem;
+
   cursor: pointer;
   width: 230px;
   color: black;
-  position: absolute;
 }
 .amount {
   display: flex;
-  margin-top: 20rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   max-width: 250px;
-  margin-left: 1rem;
+  margin-left: 5px;
   color: black;
-  position: absolute;
+  background-color: #fff;
 }
 
 .before {
@@ -1678,8 +1678,4 @@ a {
   font-size: 17px;
   margin-left: 20px;
   cursor: pointer;
-}
-
-.background-color {
-  background-color: yellow;
 }
