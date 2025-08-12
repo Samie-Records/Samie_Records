@@ -1679,3 +1679,25 @@ a {
   margin-left: 20px;
   cursor: pointer;
 }
+
+/* thank-you-form*/
+
+.form-sec {
+  text-align: center;
+  padding-top: 70px;
+  color: black;
+}
+.form-sec h2 {
+  font-size: larger;
+}
+
+.back-home {
+  text-decoration: none;
+}
+.form-sec a {
+  color: black;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}

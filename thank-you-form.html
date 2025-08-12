@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank You</title>
+    <title>Form Submitted</title>
+    <meta charset="UTF-8" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="general.css" />
@@ -17,7 +19,6 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet" />
   </head>
-
   <body>
     <header class="sidebar">
       <div onclick="hideSidebar()" class="mbi">
@@ -46,13 +47,50 @@
         <a href="payment.html">Payment</a>
         <a href="form.html">Contact</a>
       </nav>
+
+      <!-- Search Icon -->
+      <div class="search-icon-container">
+        <img
+          src="search-regular-24.png"
+          alt="Search"
+          class="search-icon"
+          onclick="openSearch()" />
+      </div>
+
+      <!-- Fullscreen Search Overlay -->
+      <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+          <form id="searchForm">
+            <input
+              type="search"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search..."
+              required />
+          </form>
+          <button class="close-btn" onclick="closeSearch()">&times;</button>
+        </div>
+      </div>
+
+      <div class="shop-wrap">
+        <a href="payment.html"
+          ><img class="shop-icon" src="shop.png" alt=""
+        /></a>
+        <a href="form.html"
+          ><img class="contact-icon" src="contact mail.png" alt=""
+        /></a>
+      </div>
+
+      <div class="menu-button" onclick="showSidebar()">
+        <a class="menu" href="#"><i class="bx bx-menu"></i></a>
+      </div>
     </header>
 
     <section class="thank-you">
       <div class="size">
         <div class="box">
-          <h1>🎉 Payment Successful!</h1>
-          <p>Thank you for your payment.</p>
+          <h1>Form Submitted Successfully!</h1>
+          <p>We will get in touch shortly.</p>
           <p><strong></strong> <span id="refText"></span></p>
         </div>
       </div>
@@ -89,10 +127,5 @@
         Rights Reserved.
       </div>
     </section>
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const ref = urlParams.get("ref");
-      document.getElementById("refText").textContent = ref;
-    </script>
   </body>
 </html>
