@@ -46,8 +46,44 @@
         <a href="payment.html">Payment</a>
         <a href="form.html">Contact</a>
       </nav>
-    </header>
 
+      <!-- Search Icon -->
+      <div class="search-icon-container">
+        <img
+          src="search-regular-24.png"
+          alt="Search"
+          class="search-icon"
+          onclick="openSearch()" />
+      </div>
+
+      <!-- Fullscreen Search Overlay -->
+      <div id="search-overlay" class="search-overlay">
+        <div class="search-content">
+          <form id="searchForm">
+            <input
+              type="search"
+              class="search-input"
+              id="searchInput"
+              placeholder="Search..."
+              required />
+          </form>
+          <button class="close-btn" onclick="closeSearch()">&times;</button>
+        </div>
+      </div>
+
+      <div class="shop-wrap">
+        <a href="payment.html"
+          ><img class="shop-icon" src="shop.png" alt=""
+        /></a>
+        <a href="form.html"
+          ><img class="contact-icon" src="contact mail.png" alt=""
+        /></a>
+      </div>
+
+      <div class="menu-button" onclick="showSidebar()">
+        <a class="menu" href="#"><i class="bx bx-menu"></i></a>
+      </div>
+    </header>
     <section class="thank-you">
       <div class="size">
         <div class="box">
@@ -93,6 +129,18 @@
       const urlParams = new URLSearchParams(window.location.search);
       const ref = urlParams.get("ref");
       document.getElementById("refText").textContent = ref;
+    </script>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
     </script>
   </body>
 </html>

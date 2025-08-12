@@ -127,5 +127,21 @@
         Rights Reserved.
       </div>
     </section>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const ref = urlParams.get("ref");
+      document.getElementById("refText").textContent = ref;
+    </script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
