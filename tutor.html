@@ -92,9 +92,10 @@
           <h2 class="cf-title">Registration</h2>
           <h3 class="cf-title-sub">For Production & Mixing/Mastering</h3>
 
+          <!-- Replace the action URL with your Formspree endpoint -->
           <form
             class="cf-form"
-            action="https://formsubmit.co/musicproductionshare@gmail.com"
+            action="https://formspree.io/f/xanbvlvk"
             method="POST">
             <input type="text" name="name" placeholder="Your Name" required />
             <input
@@ -114,16 +115,11 @@
               placeholder="Your Message"
               required></textarea>
 
-            <!-- optional hidden fields -->
+            <!-- Redirect to thank-you page -->
             <input
               type="hidden"
-              name="_subject"
-              value="New Message from Contact Form" />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://yourwebsite.com/thank-you.html" />
-            <input type="hidden" name="_captcha" value="false" />
+              name="_redirect"
+              value="https://samierecords.com/thank-you-form.html" />
 
             <button type="submit">Send</button>
           </form>
